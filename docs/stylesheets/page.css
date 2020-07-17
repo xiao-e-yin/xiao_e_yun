@@ -3,8 +3,11 @@
  font-color:#800080;
  color:#800080;
 } 
+li{
+list-style-type:circle;
+}
 a{
-padding:2px;
+margin:2px;
 color:#800080;
 border: 5px solid #800080;
 }
