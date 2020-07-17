@@ -1,12 +1,19 @@
-﻿.welcome{
+﻿.main_content{
+position: relative;
+}
+.welcome{
 padding:5px;
 font-size:20px;
 color:var(--main_color);
+animation-name: welcome_animation;
+animation-duration:2.5s;
+animation-delay:3s;
+animation-iteration-count:infinite;
 }
-.web_link{
+.web_link {
 font-size:35px;
 }
 .web_link #web{
 font-size:35px;
-padding:5px;
+margin-top:15px;
 }
