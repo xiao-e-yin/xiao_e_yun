@@ -17,3 +17,6 @@ color:#fff;
 transition:opacity 300ms,background-color 500ms ease-out;
 background-color:rgba(0,0,0,0.4);
 }/*超連結尾*/
+hr{/*線條頭*/
+background-color:#800080;
+}/*線條尾*/
