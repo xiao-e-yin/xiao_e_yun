@@ -1,4 +1,4 @@
 ﻿.welcome{
 font-size:15px;
-color#800080;
+color:var(--main_color);
 }

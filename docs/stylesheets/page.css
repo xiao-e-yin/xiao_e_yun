@@ -1,16 +1,19 @@
 ﻿div{font-size:5pt;
  font-family:"內海字體","微軟正黑體","Arial";
  font-color:#800080;
- color:#800080;
+ color:var(--main_color);
 } 
 li{
 list-style-type:circle;
 }
-a{
+a{/*超連結頭*/
 margin:2px;
-color:#800080;
-border: 5px solid #800080;
+color:#d400d4;
+border: 2px solid rgba(212,0,212,0.5);
+background-color:#fff;
 }
 a:hover{
-color:#fff
-}
+color:#fff;
+transition:opacity 300ms,background-color 500ms ease-out;
+background-color:rgba(0,0,0,0.4);
+}/*超連結尾*/
