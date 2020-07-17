@@ -1,5 +1,6 @@
 ﻿@keyframes welcome_animation{
 0%{opacity:1;}
-50%{opacity:0;}
-100%{opacity:1;}
+8%{opacity:0;}
+12%{opacity:0;}
+20%{opacity:1;}
 }

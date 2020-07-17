@@ -1,12 +1,12 @@
 ﻿.main_content{
-position: relative;
+position: fixed;
 }
 .welcome{
-padding:5px;
+padding:0px;
 font-size:20px;
 color:var(--main_color);
 animation-name: welcome_animation;
-animation-duration:2.5s;
+animation-duration:5s;
 animation-delay:3s;
 animation-iteration-count:infinite;
 }
