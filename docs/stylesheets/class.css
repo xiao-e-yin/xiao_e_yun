@@ -1,5 +1,17 @@
-﻿.main_content{
+﻿.content{
 position: fixed;
+}
+.main_content{
+position:fixed;
+top:70px;
+}
+.header{
+position: fixed;
+top:0px;
+left:0px;
+padding:5px;
+width:100vw;
+background-color:rgba(255,255,255,0.5)
 }
 .welcome{
 padding:0px;
@@ -16,4 +28,20 @@ font-size:35px;
 .web_link #web{
 font-size:35px;
 margin-top:15px;
+}
+.button_link{
+transition:color 250ms,background-color 400ms,opacity 800ms ease-out;
+text-decoration:none;
+padding:1px 2px;
+color:#d400d4;
+border: 2px solid rgba(212,0,212,0.5);
+background-color:rgba(255,255,255,0.5);
+font-size:35px;
+}
+.button_link:hover{
+color:#fff;
+background-color:rgba(0,0,0,0.4);
+}
+.button_link:active{
+opacity:0;
 }
