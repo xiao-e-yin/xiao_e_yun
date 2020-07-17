@@ -1,7 +1,12 @@
 ﻿.welcome{
-font-size:15px;
+padding:5px;
+font-size:20px;
 color:var(--main_color);
 }
 .web_link{
 font-size:35px;
+}
+.web_link #web{
+font-size:35px;
+padding:5px;
 }

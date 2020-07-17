@@ -1,22 +1,38 @@
-﻿div{font-size:5pt;
+﻿p{/*正常文字*/
+font-size:20px;
+margin:0px;
+margin-left:10px;
+}
+body{
+  background-color: lightblue;
+  padding:0px;
+  margin:0px;
  font-family:"內海字體","微軟正黑體","Arial";
- font-color:#800080;
+ font-color:var(--main_color);
  color:var(--main_color);
-} 
-li{
-list-style-type:circle;
+}
+ul{/*表格總體*/
+margin:0px;
+}
+li{/*無序表格*/
+list-style-type:none;
 }
 a{/*超連結頭*/
+text-decoration:none;
 margin:2px;
-color:#d400d4;
+padding:1px 2px;
+fontcolor:#d400d4;
 border: 2px solid rgba(212,0,212,0.5);
-background-color:#fff;
+background-color:rgba(255,255,255,0.5);
 }
 a:hover{
 color:#fff;
-transition:opacity 300ms,background-color 500ms ease-out;
 background-color:rgba(0,0,0,0.4);
-}/*超連結尾*/
+}
+a:active {
+opacity:0
+}
+/*超連結尾*/
 hr{/*線條頭*/
 background-color:#800080;
 }/*線條尾*/
