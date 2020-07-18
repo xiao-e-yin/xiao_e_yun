@@ -1,11 +1,4 @@
-﻿.content{
-position: fixed;
-}
-.main_content{
-position:fixed;
-top:70px;
-}
-.header{
+﻿.header{/*標頭*/
 position: fixed;
 top:0px;
 left:0px;
@@ -13,8 +6,30 @@ padding:5px;
 width:100vw;
 background-color:rgba(255,255,255,0.5)
 }
-.welcome{
+.column {/*行內容*/
+  float: left;
+  width: 33.33%;
+  padding:5px 15px;
+}
+@media screen and (max-width: 600px) {/*窄內容*/
+  .column {
+    width: 100%;
+  }
+}
+.more{/*更多*/
+position:fixed
+}
+.main_content{/*主內容*/
+position:fixed;
+top:65px;
+width:100vw;
+}
+
+.welcome{/*標頭歡迎*/
+position:relative;
 padding:0px;
+top:3px;
+left:8px;
 font-size:20px;
 color:var(--main_color);
 animation-name: welcome_animation;
@@ -22,10 +37,10 @@ animation-duration:5s;
 animation-delay:3s;
 animation-iteration-count:infinite;
 }
-.web_link {
+.web_link {/*網頁連結*/
 font-size:35px;
 }
-.web_link #web{
+.web_link #web{/*網頁連結*/
 font-size:35px;
 margin-top:15px;
 }
@@ -34,9 +49,10 @@ transition:color 250ms,background-color 400ms,opacity 800ms ease-out;
 text-decoration:none;
 padding:1px 2px;
 color:#d400d4;
-border: 2px solid rgba(212,0,212,0.5);
-background-color:rgba(255,255,255,0.5);
+border: 2px solid rgba(212,0,212,1);
+background-color:rgba(255,255,255,0.4);
 font-size:35px;
+border-radius:5px;
 }
 .button_link:hover{
 color:#fff;
@@ -44,4 +60,9 @@ background-color:rgba(0,0,0,0.4);
 }
 .button_link:active{
 opacity:0;
+}
+.change_background{
+position:fixed;
+bottom:15px;
+right:15px;
 }
