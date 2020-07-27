@@ -39,20 +39,6 @@ background-color:rgba(0,0,0,0.4);
 a:active {/*超連結啟動*/
 border:solid black 2px;
 }
-input{/*按鈕*/
-transition:color 250ms,background-color 300ms,opacity 800ms ease-out;
-text-decoration:none;
-padding:1px 2px;
-color:#d400d4;
-border: 2px solid rgba(212,0,212,1);
-background-color:rgba(255,255,255,0.4);
-border-radius:5px;
-font-family:"內海字體";
-}
-input:hover{
-color:#fff;
-background-color:rgba(0,0,0,0.4);
-}
 button { /*按鈕正常*/
     transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
     text-decoration: none;
@@ -70,4 +56,8 @@ background-color:rgba(0,0,0,0.4);
 }
 button:active {/*按鈕啟動*/
 border:solid black 2px;
+}
+h1 {
+color:var(--main_color);
+padding:2px;
 }
