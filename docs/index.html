@@ -25,8 +25,8 @@
   <div class="section"><!--左側內容-->
    <div class="web_link"><!--網站連結頭-->
     <p>網站連結</p><ul>
-     <li id=web class=steam><button id="steam_button" onclick="steam_page()">Steam</button>
-     <li id=web class=twitter><button href="https://twitter.com/qazxsw517">Twitter</button>
+     <li id=web class=steam><button onclick="steam()">Steam</button>
+     <li id=web class=twitter><button onclick="twitter()">Twitter</button>
      <li id=web class=imgur><button href="https://imgur.com/user/QAZXSW517/posts">Imgur</button>
      <li id=web class=github><button href="https://github.com/">GitHub</button>
    </ul></div><!--網站連結尾-->
@@ -37,21 +37,32 @@
   </div> 
 
   <div class="section"><!--右側內容-->
-      <div id=steam_page class=steam_link>
-          <h1 class="steam_page_title">STEAM帳號!</h1><!--steam介面-->
-          <div class="steam_account"><!--QAZXSW517-->
-              <img class="steam_avatar" src="images/steam_QAZXSW517.png" width="200" height="200" />
-              <a class="steam_name" href="https://steamcommunity.com/id/QAZXSW517/">◎小悪運◎</a>
+     <div id=steam_page class=link  style="display:none"><!--steam介面-->
+          <h1 class="title">STEAM帳號!</h1><!--標題-->
+          <div class="account"><!--QAZXSW517-->
+              <img class="avatar" src="images/steam_QAZXSW517.png" width="200" height="200" />
+              <a class="name" href="https://steamcommunity.com/id/QAZXSW517/">◎小悪運◎</a>
+              <p class="description">歡迎回來呀</p>
           </div>
-          <div class="steam_account"><!--xiao_e_yun-->
-              <img class="steam_avatar" src="images/steam_xiao_e_yun.png" width="200" height="200" />
-              <a class="steam_name" href="https://steamcommunity.com/id/xiao_e_yun/">◎悪魅醬◎</a>
+          <div class="account"><!--xiao_e_yun-->
+              <img class="avatar" src="images/steam_xiao_e_yun.png" width="200" height="200" />
+              <a class="name" href="https://steamcommunity.com/id/xiao_e_yun/">◎悪魅醬◎</a>
+              <p class="description">你過的好嗎</p>
           </div>
-          <div class="steam_account"><!--xiao_e_yun_wife-->
-            <img class="steam_avatar" src="images/steam_xiao_e_yun_wife.png" width="200" height="200" />
-            <a class="steam_name" href="https://steamcommunity.com/id/xiao_e_yun_wife">◎悪運の妻◎</a>
+          <div class="account"><!--xiao_e_yun_wife-->
+            <img class="avatar" src="images/steam_xiao_e_yun_wife.png" width="200" height="200" />
+            <a class="name" href="https://steamcommunity.com/id/xiao_e_yun_wife">◎悪運の妻◎</a>
+            <p class="description">記得我嗎</p>
           </div>
       </div>
+     <div id="twitter_page" class="link" style="display:none"><!--twitter介面-->
+         <h1 class="title">TWITTER帳號!</h1><!--標題-->
+         <div class="account">
+             <img class="avatar" src="images/steam_QAZXSW517.png" width="200" height="200" />
+             <a class="name" href="https://twitter.com/qazxsw517">QAZXSW517</a>
+             <p class="description">自己一個人w</p>
+         </div>
+     </div>
   </div>
  </div>
 

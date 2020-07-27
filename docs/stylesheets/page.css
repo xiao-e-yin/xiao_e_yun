@@ -57,7 +57,7 @@ background-color:rgba(0,0,0,0.4);
 button:active {/*按鈕啟動*/
 border:solid black 2px;
 }
-h1 {
+h1 {/*大標題*/
 color:var(--main_color);
 padding:2px;
 }

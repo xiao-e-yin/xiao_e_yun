@@ -1,6 +1,6 @@
 ﻿:root {
-  --main_color:#d100d1;
-  --font_size:35px;
+  --main_color:#d100d1;/*主色*/
+  --main_font_size:35px;/*大字體大小*/
   --secondary_color:rgba(209, 0, 209, 0.5);
   --background_color:rgba(209, 0, 209, 0.3);
 }

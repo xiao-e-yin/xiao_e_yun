@@ -10,7 +10,7 @@ background-color:rgba(255,255,255,0.5)
   float: left;
   width: 33%;
 }
-.main_content:after {
+.main_content:after { /*三段式內容*/
     content: "";
     display: table;
     clear: both;
@@ -42,49 +42,53 @@ animation-delay:3s;
 animation-iteration-count:infinite;
 }
 .web_link { /*網頁連結(主)*/
-    font-size: 35px;
+    font-size: var(--main_font_size);
 }
 .web_link #web{/*網頁連結(文字)*/
-font-size:35px;
+font-size:var(--main_font_size);
 margin-top:15px;
 }
-.steam_link { /*steam界面*/
-    display: none;
-    opacity: 0;
+.link { /*右側界面*/
+    position:absolute;
+    opacity:0;
     transition: opacity 300ms ease-out;
 }
-.steam_page_title { /*steam標題*/
+.title { /*steam標題*/
     display: table;
     margin: 3px 0;
     padding-right: 50px;
     background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
     border-left: 3px solid var(--main_color);
 }
-.steam_account {/*steam帳號*/
-width:300px;
-height:250px;
-position:relative;
-float:right;
-margin:15px 30px 0 0;
+.account { /*steam帳號*/
+    width: 300px;
+    height: 250px;
+    position: relative;
+    float: right;
+    margin: 15px 30px 0 0;
+    background-image: linear-gradient(to left,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
+    border-right: 3px solid var(--main_color);
 }
-.steam_account::before {/*steam背景*/
-content: "";
-width: inherit;
-height: inherit;
-background-image: linear-gradient(to left,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
-background-size: contain;
-position: absolute;
-z-index: -1;
-border-right: 3px solid var(--main_color);
-}
-.steam_avatar {/*steam頭像*/
+.avatar {/*頭像*/
 border: 2px solid var(--main_color);
 border-radius:10px;
 position:absolute;
 right:15px;
 top:10px;
 }
-.steam_name {/*steam名稱*/
+.description { /*內容*/
+    position: absolute;
+    bottom: 6px;
+    left: 70px;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    padding: 1px 2px;
+    color: #d400d4;
+    border: 2px solid rgba(212,0,212,1);
+    background-color: rgba(255,255,255,0.8);
+    border-radius:5px;
+}
+.name {/*名稱*/
 position:absolute;
 bottom:8px;
 right:15px;
