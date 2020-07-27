@@ -6,13 +6,17 @@ padding:5px;
 width:100vw;
 background-color:rgba(255,255,255,0.5)
 }
-.column {/*行內容*/
+.section {/*三段式內容*/
   float: left;
-  width: 33.33%;
-  padding:5px 15px;
+  width: 33%;
 }
-@media screen and (max-width: 600px) {/*窄內容*/
-  .column {
+.main_content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {/*小螢幕縮放*/
+  .section {
     width: 100%;
   }
 }
@@ -37,32 +41,52 @@ animation-duration:5s;
 animation-delay:3s;
 animation-iteration-count:infinite;
 }
-.web_link {/*網頁連結*/
-font-size:35px;
+.web_link { /*網頁連結(主)*/
+    font-size: 35px;
 }
-.web_link #web{/*網頁連結*/
+.web_link #web{/*網頁連結(文字)*/
 font-size:35px;
 margin-top:15px;
 }
-.button_link{
-transition:color 250ms,background-color 400ms,opacity 800ms ease-out;
-text-decoration:none;
-padding:1px 2px;
-color:#d400d4;
-border: 2px solid rgba(212,0,212,1);
-background-color:rgba(255,255,255,0.4);
-font-size:35px;
-border-radius:5px;
+.steam_link {
+display:none;
+opacity:1;
 }
-.button_link:hover{
-color:#fff;
-background-color:rgba(0,0,0,0.4);
+.steam_page_title { /*steam帳戶*/
+    display: table;
+    margin:3px 0;
+    padding-right: 50px;
 }
-.button_link:active{
-opacity:0;
+.steam_account {
+width:300px;
+height:250px;
+position:relative;
+float:right;
+margin:15px 30px 0 0;
 }
-.change_background{
-position:fixed;
-bottom:15px;
+.steam_account::before {
+content: "";
+width: inherit;
+height: inherit;
+background-image: linear-gradient(to left,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
+background-size: contain;
+position: absolute;
+z-index: -1;
+border-right: 3px solid var(--main_color);
+}
+.steam_avatar {
+border: 2px solid var(--main_color);
+border-radius:10px;
+position:absolute;
 right:15px;
+top:10px;
+}
+.steam_name {
+position:absolute;
+bottom:8px;
+right:15px;
+padding:2px;
+}
+#call_interface {
+
 }

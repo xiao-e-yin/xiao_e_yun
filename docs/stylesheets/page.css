@@ -6,14 +6,11 @@ body{
   padding:5px;
   margin:0px;
   font-family:"內海字體","微軟正黑體","Arial";
-  font-color:var(--main_color);
   color:var(--main_color);
-}
-body:hover{
- 
 }
 hr{/*線條頭*/
 background-color:var(--main_color);
+border:none;
 }/*線條尾*/
 p{/*正常文字*/
 font-size:20px;
@@ -26,7 +23,7 @@ margin:5px;
 li{/*無序表格*/
 list-style-type:none;
 }
-a{/*超連結頭*/
+a{/*超連結正常*/
 transition:color 250ms,background-color 400ms,opacity 800ms ease-out;
 text-decoration:none;
 padding:1px 2px;
@@ -35,16 +32,12 @@ border: 2px solid rgba(212,0,212,1);
 background-color:rgba(255,255,255,0.4);
 border-radius:5px
 }
-a:hover{
+a:hover{/*超連結觸碰*/
 color:#fff;
 background-color:rgba(0,0,0,0.4);
 }
-a:active {
-opacity:0;
+a:active {/*超連結啟動*/
 border:solid black 2px;
-}/*超連結尾*/
-button{
-font-family:"內海字體";
 }
 input{/*按鈕*/
 transition:color 250ms,background-color 300ms,opacity 800ms ease-out;
@@ -59,4 +52,22 @@ font-family:"內海字體";
 input:hover{
 color:#fff;
 background-color:rgba(0,0,0,0.4);
+}
+button { /*按鈕正常*/
+    transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
+    text-decoration: none;
+    padding: 1px 2px;
+    color: #d400d4;
+    border: 2px solid rgba(212,0,212,1);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    font-size:inherit;
+    font-family:inherit;
+}
+button:hover{/*按鈕觸碰*/
+color:#fff;
+background-color:rgba(0,0,0,0.4);
+}
+button:active {/*按鈕啟動*/
+border:solid black 2px;
 }

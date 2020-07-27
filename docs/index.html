@@ -1,39 +1,62 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8">
-    <title>悪運的家</title>
+    <title>悪運的家</title><!--網站名稱-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--網站名稱-->
     <link rel="icon" href="images/logo.ico" type="image/x-icon"><!--網站圖標-->
     <link rel="stylesheet" type="text/css" href="stylesheets/root.css" media="screen"><!--css集start-->
     <link rel="stylesheet" type="text/css" href="stylesheets/animation.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/class.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/page.css" media="screen"><!--css集end-->
-    <script src="javascript/page.js"></script>
+    <script src="javascript/page.js"></script><!--javascript集-->
   </head> 
 
 <body>
- <div class="content">
-   <div class="header">
-   <div class="welcome">開心の說<sup>你好啊~</sup>
-   <hr size=6 width=140 align=left >
+ <div class="content"><!--常駐內容-->
+   <div class="header"><!--標頭-->
+       <div class="welcome">悪運の<sup>家~</sup><!--歡迎-->
+           <hr class="welcome_line" size=6 width=90px align=left>
+       </div>
    </div>
-   </div>
+ </div>
 
-  <div class="main_content"> 
-  <div class="column">
-   <div class="web_link">
+ <div class="main_content"> <!--主要內容-->
+  <div class="section"><!--左側內容-->
+   <div class="web_link"><!--網站連結頭-->
     <p>網站連結</p><ul>
-     <li id=web class=steam><input class=button_link id=steam type=button Value=Steam></a>
-     <li id=web class=twitter><a href="https://twitter.com/qazxsw517">Twitter</a>
-     <li id=web class=imgur><a href="https://imgur.com/user/QAZXSW517/posts">Imgur</a>
-     <li id=web class=github><a href="https://github.com/">GitHub</a>
-   </ul></div>
+     <li id=web class=steam><button onclick="steam_page()">Steam</button>
+     <li id=web class=twitter><button href="https://twitter.com/qazxsw517">Twitter</button>
+     <li id=web class=imgur><button href="https://imgur.com/user/QAZXSW517/posts">Imgur</button>
+     <li id=web class=github><button href="https://github.com/">GitHub</button>
+   </ul></div><!--網站連結尾-->
   </div>
- </div> 
+  
+  <div class="section"><!--中間內容-->
+     <h1>hi</h1>
+  </div> 
 
- <div class="more">
-  <input type=button class=change_background id=change_background Value="切換桌布">
+  <div class="section" id="call_interface"><!--右側內容-->
+      <div id=steam_page class=steam_link>
+          <h1 class="steam_page_title">STEAM帳號!</h1><!--steam介面-->
+          <div class="steam_account"><!--QAZXSW517-->
+              <img class="steam_avatar" src="images/steam_QAZXSW517.png" width="200" height="200" />
+              <a class="steam_name" href="https://steamcommunity.com/id/QAZXSW517/">◎小悪運◎</a>
+          </div>
+          <div class="steam_account"><!--xiao_e_yun-->
+              <img class="steam_avatar" src="images/steam_xiao_e_yun.png" width="200" height="200" />
+              <a class="steam_name" href="https://steamcommunity.com/id/xiao_e_yun/">◎悪魅醬◎</a>
+          </div>
+          <div class="steam_account"><!--xiao_e_yun_wife-->
+            <img class="steam_avatar" src="images/steam_xiao_e_yun_wife.png" width="200" height="200" />
+            <a class="steam_name" href="https://steamcommunity.com/id/xiao_e_yun_wife">◎悪運の妻◎</a>
+          </div>
+      </div>
+  </div>
+ </div>
+
+ <div class="more"><!--更多內容-->
+
  </div>
 </body>
 </html>

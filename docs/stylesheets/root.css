@@ -1,4 +1,6 @@
 ﻿:root {
   --main_color:#d100d1;
-
+  --font_size:35px;
+  --secondary_color:rgba(209, 0, 209, 0.5);
+  --background_color:rgba(209, 0, 209, 0.3);
 }
