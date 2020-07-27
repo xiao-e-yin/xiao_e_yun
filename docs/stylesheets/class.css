@@ -4,16 +4,21 @@ top:0px;
 left:0px;
 padding:5px;
 width:100vw;
-background-color:rgba(255,255,255,0.5)
+background-color:rgba(255,255,255,0.5);
+z-index:1;
 }
-.section {/*三段式內容*/
-  float: left;
-  width: 33%;
+.section { /*三段式內容*/
+    float: left;
+    width: 33%;
 }
 .main_content:after { /*三段式內容*/
     content: "";
     display: table;
     clear: both;
+}
+.air_block{
+    height:65px;
+    width:100vw
 }
 @media screen and (max-width: 600px) {/*小螢幕縮放*/
   .section {
@@ -25,8 +30,9 @@ position:fixed
 }
 .main_content{/*主內容*/
 position:fixed;
-top:65px;
-width:100vw;
+top:0px;
+left:0px;
+z-index:0;
 }
 
 .welcome{/*標頭歡迎*/
@@ -49,22 +55,28 @@ font-size:var(--main_font_size);
 margin-top:15px;
 }
 .link { /*右側界面*/
-    position:absolute;
-    opacity:0;
+    position: absolute;
+    width: 33.33%;
+    opacity: 0;
     transition: opacity 300ms ease-out;
 }
-.title { /*steam標題*/
+@media screen and (max-width: 600px) {/*右側界面縮放*/
+    .link {
+        width: 100%;
+    }
+}
+.title { /*標題*/
     display: table;
     margin: 3px 0;
     padding-right: 50px;
     background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
     border-left: 3px solid var(--main_color);
 }
-.account { /*steam帳號*/
+.account { /*帳號*/
     width: 300px;
     height: 250px;
     position: relative;
-    float: right;
+    float:right;
     margin: 15px 30px 0 0;
     background-image: linear-gradient(to left,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
     border-right: 3px solid var(--main_color);
@@ -93,4 +105,21 @@ position:absolute;
 bottom:8px;
 right:15px;
 padding:2px;
+}
+.discord_tag {
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
+    padding: 2px;
+    text-decoration: none;
+    padding: 1px 2px;
+    color: #d400d4;
+    border: 2px solid rgba(212,0,212,1);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.main_content {/*主內容捲軸*/
+    height: 100vh;
+    overflow-y: auto;
 }
