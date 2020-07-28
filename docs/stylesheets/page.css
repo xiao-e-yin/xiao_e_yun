@@ -1,12 +1,16 @@
-﻿html{
-  background-image:url("../images/background.png");
-  background-position:left top;
+﻿@font-face {
+    font-family: NaikaiFont;
+    src:;
 }
-body{
-  padding:5px;
-  margin:0px;
-  font-family:"內海字體","微軟正黑體","Arial";
-  color:var(--main_color);
+html {
+    background-image: url("../images/background.png");
+    background-position: left top;
+}
+body {
+    padding: 5px;
+    margin: 0px;
+    font-family:"NaikaiFont","內海字體","微軟正黑體","Arial";
+    color: var(--main_color);
 }
 hr{/*線條頭*/
 background-color:var(--main_color);
