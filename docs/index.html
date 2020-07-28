@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>悪運的家</title><!--網站名稱-->
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--網站名稱-->
@@ -9,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/animation.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/class.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/page.css" media="screen"><!--css集end-->
+    <script src="javascript/web_link.js"></script><!--網站js集-->
     <script src="javascript/page.js"></script><!--javascript集-->
-  </head> 
+</head> 
 
 <body>
  <div class="content"><!--常駐內容-->
@@ -26,17 +27,17 @@
   <div class="section"><!--左側內容-->
    <div class="web_link"><!--網站連結頭-->
     <p>網站連結</p><ul>
-    <li id=web class=steam><button onclick="steam()">Steam</button>
-    <li id=web class=discord><button onclick="discord()">discord</button>
-    <li id=web class=twitter><button onclick="twitter()">Twitter</button>
-    <li id=web class=imgur><button onclick="imgur()">Imgur</button>
-    <li id=web class=github><button onclick="github()">Github</button>
-    <li id=web class=youtube><button onclick="youtube()">youtube</button>
-    <li id=web class=twitch><button onclick="twitch()">twitch</button>
+    <li class=web><button onclick="web('steam')">Steam</button>
+    <li class=web><button onclick="web('discord')">Discord</button>
+    <li class=web><button onclick="web('twitter')">Twitter</button>
+    <li class=web><button onclick="web('imgur')">Imgur</button>
+    <li class=web><button onclick="web('github')">GitHub</button>
+    <li class=web><button onclick="web('youtube')">YouTube</button>
+    <li class=web><button onclick="web('twitch')">Twitch</button>
 </ul></div><!--網站連結尾-->
   </div>
   
-  <div class="section"><!--中間內容-->
+  <div class="main_section"><!--中間內容-->
      <h1>hi</h1>
   </div> 
 
@@ -69,7 +70,8 @@
           <h1 class="title">discord帳號!</h1><!--標題-->
           <div class="account">
               <img class="avatar" src="images/QAZXSW517.png" width="200" height="200" />
-              <p class="discord_tag">小悪運</p>
+              <button onclick="copy_link('discord')" class="name" id="discord">◎ 悪運醬 ◎#5639</button>
+              <p class="copy" id="discord_tag">已複製</p>
               <p class="description">hihi</p>
           </div>
           <div class="account">

@@ -9,7 +9,11 @@ z-index:1;
 }
 .section { /*三段式內容*/
     float: left;
-    width: 33%;
+    width: 25vw;
+}
+.main_section { /*三段式內容*/
+    float: left;
+    width: 50vw;
 }
 .main_content:after { /*三段式內容*/
     content: "";
@@ -50,13 +54,13 @@ animation-iteration-count:infinite;
 .web_link { /*網頁連結(主)*/
     font-size: var(--main_font_size);
 }
-.web_link #web{/*網頁連結(文字)*/
+.web{/*網頁連結(文字)*/
 font-size:var(--main_font_size);
 margin-top:15px;
 }
 .link { /*右側界面*/
     position: absolute;
-    width: 33.33%;
+    width: 25vw;
     opacity: 0;
     transition: opacity 300ms ease-out;
 }
@@ -106,20 +110,22 @@ bottom:8px;
 right:15px;
 padding:2px;
 }
-.discord_tag {
-    position: absolute;
-    bottom: 8px;
-    right: 15px;
-    padding: 2px;
-    text-decoration: none;
-    padding: 1px 2px;
+.main_content {/*主內容捲軸*/
+    height: 100vh;
+    overflow-y: auto;
+}
+#discord_tag {
+    transition: opacity 300ms ease-out;
+    opacity: 1;
+    display: none;
+    transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
     color: #d400d4;
     border: 2px solid rgba(212,0,212,1);
     background-color: rgba(255,255,255,0.4);
     border-radius: 5px;
-    font-size: 15px;
-}
-.main_content {/*主內容捲軸*/
-    height: 100vh;
-    overflow-y: auto;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    padding: 2px;
+    font-size: var(--font_size);
 }
