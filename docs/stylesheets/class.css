@@ -9,78 +9,24 @@ z-index:1;
 display:block;
 border-bottom:2px solid var(--main_color);
 }
-.right_section { /*右邊內容*/
-    float: left;
-    width: 30vw;
+.welcome { /*標頭歡迎*/
+    position: relative;
+    padding: 0px;
+    top: 3px;
+    left: 8px;
+    font-size: 20px;
+    color: var(--main_color);
+    animation-name: welcome_animation;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
 }
-.left_section { /*左邊內容*/
-    float: left;
-    width: 20vw;
-}
-.main_section { /*中間內容*/
-    float: left;
-    width: 50vw;
-    transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
-    text-decoration: none;
-    padding: 1px 2px;
-    color: #d400d4;
-    border: 2px solid rgba(212,0,212,1);
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 5px;
-    font-size: inherit;
-    font-family: inherit;
-    text-align: center;
-    height:auto
-}
-.main_content:after { /*三段式內容*/
-    content: "";
-    display: table;
-    clear: both;
-
-}
-.air_block{/*頂部標頭空氣牆*/
+.air_block{/*空氣牆*/
     height:60px;
     width:100vw
 }
 .more{/*更多*/
 position:fixed
-}
-.main_content{/*主內容*/
-position:fixed;
-top:0px;
-left:0px;
-z-index:0;
-}
-
-.welcome{/*標頭歡迎*/
-position:relative;
-padding:0px;
-top:3px;
-left:8px;
-font-size:20px;
-color:var(--main_color);
-animation-name: welcome_animation;
-animation-duration:5s;
-animation-delay:3s;
-animation-iteration-count:infinite;
-}
-.web_link { /*網頁連結(主)*/
-    font-size: var(--main_font_size);
-}
-.web{/*網頁連結(文字)*/
-font-size:var(--main_font_size);
-margin-top:15px;
-}
-.link { /*右側界面*/
-    position: absolute;
-    width: 30vw;
-    opacity: 0;
-    transition: opacity 300ms ease-out;
-}
-@media screen and (max-width: 600px) {/*右側界面縮放*/
-    .link {
-        width: 100%;
-    }
 }
 .title { /*標題*/
     display: table;
@@ -89,56 +35,10 @@ margin-top:15px;
     background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
     border-left: 3px solid var(--main_color);
 }
-.account { /*帳號*/
-    width: 300px;
-    height: 250px;
-    position: relative;
-    float:right;
-    margin: 15px 30px 0 0;
-    background-image: linear-gradient(to left,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
-    border-right: 3px solid var(--main_color);
-}
-.avatar {/*頭像*/
-border: 2px solid var(--main_color);
-border-radius:10px;
-position:absolute;
-right:15px;
-top:10px;
-}
-.description { /*內容*/
+.setting { /*設置*/
     position: absolute;
-    bottom: 6px;
-    left: 70px;
-    background-color: rgba(255, 255, 255, 0.25);
-    text-decoration: none;
-    padding: 1px 2px;
-    color: #d400d4;
-    border: 2px solid rgba(212,0,212,1);
-    background-color: rgba(255,255,255,0.8);
-    border-radius:5px;
-}
-.name {/*名稱*/
-position:absolute;
-bottom:8px;
-right:15px;
-padding:2px;
-}
-#discord_tag {/*discord名稱*/
-    display: none;
-    color: #d400d4;
-    border: 2px solid rgba(212,0,212,1);
-    background-color: var(--background_color);
-    border-radius: 5px;
-    position: absolute;
-    bottom: 5px;
-    right: 15px;
-    padding: 2px;
-    font-size: var(--font_size);
-}
-.font_download {/*字型安裝*/
-    position:absolute;
-    top:5px;
-    right:5px;
+    top: 5px;
+    right: 5px;
 }
 .main_content { /*主內容捲軸*/
     height: 100vh;

@@ -1,21 +1,29 @@
-﻿.header{/*標頭*/
-position: fixed;
-top:0px;
-left:0px;
-padding:0px;
-background-color:rgba(255,255,255,0.5);
-width:100vw;
-height:5vh;
-z-index:1;
-display:block
+﻿.more{/*更多*/
+position:fixed
 }
 .right_section { /*右邊內容*/
     float: left;
     width: 30vw;
 }
+
 .left_section { /*左邊內容*/
     float: left;
     width: 20vw;
+}
+.web_link { /*網頁連結(主)*/
+    font-size: var(--main_font_size);
+}
+
+.web { /*網頁連結(文字)*/
+    font-size: var(--main_font_size);
+    margin-top: 15px;
+}
+
+.link { /*右側界面*/
+    position: absolute;
+    width: 30vw;
+    opacity: 0;
+    transition: opacity 300ms ease-out;
 }
 .main_section { /*中間內容*/
     float: left;
@@ -30,20 +38,12 @@ display:block
     font-size: inherit;
     font-family: inherit;
     text-align: center;
-    height:auto
+    height: auto
 }
 .main_content:after { /*三段式內容*/
     content: "";
     display: table;
     clear: both;
-
-}
-.air_block{/*頂部標頭空氣牆*/
-    height:60px;
-    width:100vw
-}
-.more{/*更多*/
-position:fixed
 }
 .main_content{/*主內容*/
 position:fixed;
@@ -51,7 +51,6 @@ top:0px;
 left:0px;
 z-index:0;
 }
-
 .welcome{/*標頭歡迎*/
 position:relative;
 padding:0px;
@@ -76,18 +75,6 @@ margin-top:15px;
     width: 30vw;
     opacity: 0;
     transition: opacity 300ms ease-out;
-}
-@media screen and (max-width: 600px) {/*右側界面縮放*/
-    .link {
-        width: 100%;
-    }
-}
-.title { /*標題*/
-    display: table;
-    margin: 3px 10px;
-    padding-right: 50px;
-    background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
-    border-left: 3px solid var(--main_color);
 }
 .account { /*帳號*/
     width: 300px;
@@ -135,12 +122,85 @@ padding:2px;
     padding: 2px;
     font-size: var(--font_size);
 }
-.font_download {/*字型安裝*/
-    position:absolute;
-    top:5px;
-    right:5px;
+@media screen and (max-width:600px) { /*手機螢幕縮放*/
+    .air_block {
+        height: 55px
+    }
+
+    .main_section {
+        width: 98vw;
+        box-sizing: border-box;
+        margin: 1vw
+    }
+    .link {
+        width: 100%
+    }
+
+    #web_link_title::after {
+        content: "|將在最下方顯示|";
+        font-size: 65%;
+    }
+    .left_section {
+        width: 98vw;
+        box-sizing: border-box;
+        overflow-y: auto;
+        margin: 0 1vw;
+    }
+
+    .right_section {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+    }
 }
-.main_content { /*主內容捲軸*/
-    height: 100vh;
-    overflow-y: auto;
+
+@media screen and (max-width:930px) and (min-width:601px) { /*小螢幕縮放*/
+    .link {
+    width: 100%;
+    }
+    .header {
+        position: fixed;
+        box-sizing: border-box;
+        width: 48vw;
+        right: 0px;
+        top: 0px;
+        left: auto;
+        margin: 1vw;
+        border: 2px solid var(--main_color);
+        border-radius: 10px
+    }
+
+    .air_block {
+        height: 0vh
+    }
+
+    .main_section {
+        width: 50vw;
+        height: 48vh;
+        margin: 0;
+        box-sizing: border-box;
+        position: fixed;
+        left: 1vw;
+        bottom: 1vh;
+    }
+
+    .left_section {
+        width: 50vw;
+        height: 49vh;
+        margin: 0 0 1vh;
+        position: fixed;
+        top: 1vh;
+        left: 5px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .right_section {
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 60px;
+        right: 5px;
+        box-sizing: border-box
+    }
 }
