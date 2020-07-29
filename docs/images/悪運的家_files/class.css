@@ -5,9 +5,9 @@ left:0px;
 padding:0px;
 background-color:rgba(255,255,255,0.5);
 width:100vw;
+height:5vh;
 z-index:1;
-display:block;
-border-bottom:2px solid var(--main_color);
+display:block
 }
 .right_section { /*右邊內容*/
     float: left;
@@ -143,5 +143,4 @@ padding:2px;
 .main_content { /*主內容捲軸*/
     height: 100vh;
     overflow-y: auto;
-    overflow-x: hidden;
 }

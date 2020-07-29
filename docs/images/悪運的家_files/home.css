@@ -1,48 +1,4 @@
-﻿.header{/*標頭*/
-position: fixed;
-top:0px;
-left:0px;
-padding:0px;
-background-color:rgba(255,255,255,0.5);
-width:100vw;
-z-index:1;
-display:block;
-border-bottom:2px solid var(--main_color);
-}
-.right_section { /*右邊內容*/
-    float: left;
-    width: 30vw;
-}
-.left_section { /*左邊內容*/
-    float: left;
-    width: 20vw;
-}
-.main_section { /*中間內容*/
-    float: left;
-    width: 50vw;
-    transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
-    text-decoration: none;
-    padding: 1px 2px;
-    color: #d400d4;
-    border: 2px solid rgba(212,0,212,1);
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 5px;
-    font-size: inherit;
-    font-family: inherit;
-    text-align: center;
-    height:auto
-}
-.main_content:after { /*三段式內容*/
-    content: "";
-    display: table;
-    clear: both;
-
-}
-.air_block{/*頂部標頭空氣牆*/
-    height:60px;
-    width:100vw
-}
-.more{/*更多*/
+﻿.more{/*更多*/
 position:fixed
 }
 .main_content{/*主內容*/
@@ -51,7 +7,6 @@ top:0px;
 left:0px;
 z-index:0;
 }
-
 .welcome{/*標頭歡迎*/
 position:relative;
 padding:0px;
@@ -76,18 +31,6 @@ margin-top:15px;
     width: 30vw;
     opacity: 0;
     transition: opacity 300ms ease-out;
-}
-@media screen and (max-width: 600px) {/*右側界面縮放*/
-    .link {
-        width: 100%;
-    }
-}
-.title { /*標題*/
-    display: table;
-    margin: 3px 10px;
-    padding-right: 50px;
-    background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
-    border-left: 3px solid var(--main_color);
 }
 .account { /*帳號*/
     width: 300px;
@@ -140,8 +83,39 @@ padding:2px;
     top:5px;
     right:5px;
 }
-.main_content { /*主內容捲軸*/
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+@media screen and (max-width:930px) { /*小螢幕縮放*/
+    .air_block {
+        height:0vh
+    }
+    .main_section {
+        width: 50vw;
+        height: 50vh;
+        box-sizing: border-box;
+        position: absolute;
+        left: 1vw;
+        bottom: 1vh;
+    }
+
+    .left_section {
+        width: 50vw;
+        height:50vh;
+        position: absolute;
+        top:5vh;
+        left: 5px;
+        box-sizing:border-box;
+        overflow-y:auto;
+    }
+
+    .right_section {
+        width: 49vw;
+        height:100vh
+        position:absolute;
+        top: 60px;
+        right: 5px;
+        box-sizing: border-box
+    }
+
+    .link {
+        width: 50vw
+    }
 }
