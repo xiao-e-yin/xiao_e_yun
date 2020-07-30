@@ -4,11 +4,20 @@
 12%{opacity:0;}
 20%{opacity:1;}
 }
-@keyframes title_animation {
+@keyframes right_background_animation {/*從左到右滑出*/
     0% {
         background-position:right
     }
     100% {
         background-position:left
+    }
+}
+@keyframes left_background_animation {/*從右到左滑出*/
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right
     }
 }

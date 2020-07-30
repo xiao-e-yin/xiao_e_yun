@@ -2,25 +2,28 @@
     position: relative;
     top: 10px;
     left: 15px;
-    width: 250px;
+    width: 95%;
     height: 200px;
-    background-image: linear-gradient(to right,var(--secondary_color),var(--background_color),rgba(209, 0, 209, 0.00));
+    background-image: linear-gradient(to right,var(--secondary_color),var(--background_color),var(--no_color),var(--no_color),var(--no_color));
+    background-size: 200%;
     margin-bottom: 15px;
     border-left: 3px solid var(--main_color);
+    animation-name: right_background_animation;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-delay: 0.6s
+    
 }
 .setting_title {
     position: relative;
     top: 5px;
-    font-size:50px
-}
-@media screen and (min-width:931px) { /*手機螢幕縮放*/
-    .setting_item {
-        width:100%
-    }
+    font-size:50px;
+    padding:0 10px 0 0
 }
 @media screen and (max-width:450px) { /*手機窄螢幕縮放*/
     .setting_item {
-        width:90vw;
+        width:40vw;
         background-image: none;
         background-color: var(--background_color);
         border: 2px solid var(--main_color);

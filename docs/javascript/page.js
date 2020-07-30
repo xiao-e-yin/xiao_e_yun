@@ -5,18 +5,16 @@ function hello() {
     setTimeout(new_user);
 }
 function new_user() {//新使用者cookie
-    
+    if ("" == document.cookie) {
+        console.log("設置新的使用者")
+        setCookie("user_name", "test")
+    }
 }
 function hello_time() {//報時機制
-    var cookie = getCookie(user_name);
+    var user_name = getCookie("user_name");
     var day = new Date();
     var time = day.getHours();
-    console.log(cookie + "現在時間" + time + "點")
-    var user_name = cookie[0]
-    if (user_name = "undefined") {
-        user_name ="陌生人"
-    }
-
+    console.log(user_name + "現在時間" + time + "點")
     if (time > 12) {//判定早中晚
         var pm_time = time - 12
         var hours_time = "下午" + pm_time + "點了惹"
@@ -30,24 +28,24 @@ function hello_time() {//報時機制
 
      if (time <= 5) {//自動回話
         document.getElementById("hello_hours").innerHTML = user_name + "還沒睡麻 " + hours_time
-        console.log(cookie + "凌晨 1-5")
+        console.log(user_name + "凌晨 1-5")
     }
     if (time >= 6) {
         if (time <= 10) {
             document.getElementById("hello_hours").innerHTML = user_name + "早上好阿 " + hours_time
-            console.log(cookie + "早上 6-10")
+            console.log(user_name + "早上 6-10")
         }
     }
     if (time >= 11) {
         if (time <= 18) {
             document.getElementById("hello_hours").innerHTML = user_name + "午安阿 " + hours_time
-            console.log(cookie + "中午 11-18")
+            console.log(user_name + "中午 11-18")
         }
     }
      if (time >= 19) {
         if (time <= 22) {
             document.getElementById("hello_hours").innerHTML = user_name + "晚上好阿 " + hours_time
-            console.log(cookie + "中午 19-22")
+            console.log(user_name + "中午 19-22")
         }
     }
     else if (time >= 23) {

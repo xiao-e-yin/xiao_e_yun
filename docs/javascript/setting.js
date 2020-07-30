@@ -1,13 +1,14 @@
-function setCookie(cname, cvalue, ) {//設定cookie
+function setCookie(cname, cvalue) {//閮剔蔭cookie
   var d = new Date();
     d.setTime(d.getTime() + 31557600000);
   var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie ='"'+ cname + "=" + cvalue + ";" + expires + ";path=/";
+    console.log(cname + "=" + cvalue + ";" + expires + ';path=/"')
+    console.log(document.cookie)
 }
-function getCookie(cname) {//取得cookie
+function getCookie(cname) {
     var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
+    var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
