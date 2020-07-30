@@ -10,12 +10,14 @@ function new_user() {//新使用者cookie
         setTimeout(hello_time,500)
     }
     else
-    hello_time()
+    console.log("取得使用者資料")
+    HelloTime()
 }
-function hello_time() {//報時機制
+function HelloTime() {//報時機制
     var user_name = getCookie("UserName");
     var day = new Date();
     var time = day.getHours();
+    console.log("報時")
     if (time > 12) {//判定早中晚
         var pm_time = time - 12
         if (pm_time >= 10) {
@@ -54,7 +56,7 @@ function hello_time() {//報時機制
             console.log(user_name + " 晚上 19-22")
         }
     }
-    else if (time >= 23) {
+    if (time >= 23) {
         document.getElementById("hello_hours").innerHTML = user_name + "快點睡了 " + hours_time
         console.log(" 午夜 21-24")
     }
