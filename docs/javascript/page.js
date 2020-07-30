@@ -15,7 +15,7 @@ function hello_time() {
     console.log(cookie + "現在時間" + time + "點")
     var user_name = cookie[0]
     if (user_name = "undefined") {
-        user_name ="陌生人"
+        user_name ="陌生人~"
     }
     if (time >= 21) {
         document.getElementById("hello_hours").innerHTML = user_name + " 快點睡了"

@@ -21,6 +21,10 @@ border-bottom:2px solid var(--main_color);
     animation-delay: 3s;
     animation-iteration-count: infinite;
 }
+.section {/*分區*/
+    width: 50vw;
+    float: left;
+}
 .air_block{/*空氣牆*/
     height:60px;
     width:100vw;
@@ -49,18 +53,33 @@ position:fixed
     left: 0px;
     z-index: 0;
 }
+#right_air {
+    display: none
+}
 @media screen and (max-width:600px) { /*手機螢幕縮放*/
     .section {
         width: 100vw;
         height: auto;
         box-sizing: border-box;
     }
+    #right_air {
+        height: 70px;
+        position: relative;
+        display: block;
+    }
+    .title {
+        border-radius: 5px;
+        background-image: none;
+        background-color: var(--background_color);
+        border: 2px solid var(--main_color);
+        padding:2px;
+    }
 }
-
 @media screen and (max-width:930px) and (min-width:601px) { /*小螢幕縮放*/
     .air_block { /*空氣牆*/
-        position: fixed;
+        position: relative;
         box-sizing: border-box;
+        display:none;
         height: 60px;
         width: 50vw
     }
@@ -76,11 +95,14 @@ position:fixed
         border-radius: 10px
     }
     .section {
-        width: 50vw;
-        height: 100vh;
-        position: absolute;
-        top: 60px;
-        right: 5px;
-        box-sizing: border-box
+        width: 48vw;
+        position: relative;
+        top: 1vh;
+        box-sizing: border-box;
+    }
+    #right_air {
+        height: 70px;
+        position: relative;
+        display: block;
     }
 }

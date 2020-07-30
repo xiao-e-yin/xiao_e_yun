@@ -122,9 +122,6 @@ padding:2px;
     padding: 2px;
     font-size: var(--font_size);
 }
-#right_air {
-display:none
-}
 @media screen and (max-width:600px) { /*手機螢幕縮放*/
     .air_block {
         height: 55px
@@ -155,6 +152,19 @@ display:none
         height: 100vh;
         box-sizing: border-box;
     }
+    .account {
+        border-radius: 5px;
+        background-image: none;
+        background-color: var(--background_color);
+        border: 2px solid var(--main_color);
+        padding: 2px;
+        width: 230px;
+        float: left;
+        margin: 15px 0 0 4vw;
+    }
+    .description {
+        left:0
+    }
 }
 
 @media screen and (max-width:930px) and (min-width:601px) { /*小螢幕縮放*/
@@ -171,12 +181,6 @@ display:none
         margin: 1vw;
         border: 2px solid var(--main_color);
         border-radius: 10px
-    }
-
-    #right_air {
-        height:70px;
-        position:relative;
-        display:block;
     }
 
     .main_section {
