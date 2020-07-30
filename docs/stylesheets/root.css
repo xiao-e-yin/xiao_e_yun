@@ -4,4 +4,5 @@
     --font_size: 20px; /*字體大小*/
     --secondary_color: rgba(255, 255, 255, 0.75); /*副色*/
     --background_color: rgba(255,255,255,0.4); /*被景色*/
+    --no_color: #eee0/*無色*/
 }

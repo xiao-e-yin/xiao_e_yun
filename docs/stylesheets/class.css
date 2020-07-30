@@ -35,9 +35,14 @@ position:fixed
 .title { /*標題*/
     display: table;
     margin: 3px 10px;
-    padding-right: 50px;
-    background-image: linear-gradient(to right,var(--background_color),rgba(209, 0, 209, 0.00));
+    padding: 3px 50px 3px 3px;
+    background-image: linear-gradient(to right,var(--secondary_color),var(--background_color),var(--no_color),var(--no_color),var(--no_color));
+    background-size: 200%,100%;
     border-left: 3px solid var(--main_color);
+    animation-name: title_animation;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay:0.2s
 }
 .setting { /*設置*/
     position: absolute;
