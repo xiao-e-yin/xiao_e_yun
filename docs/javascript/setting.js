@@ -2,9 +2,7 @@ function setCookie(cname, cvalue) {//設置cookie
   var d = new Date();
     d.setTime(d.getTime() + 31557600000);
   var expires = "expires="+ d.toUTCString();
-    document.cookie ='"'+ cname + "=" + cvalue + ";" + expires + ";path=/";
-    console.log(cname + "=" + cvalue + ";" + expires + ';path=/"')
-    console.log(document.cookie)
+    document.cookie =cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 function getCookie(cname) {
     var name = cname + "=";
