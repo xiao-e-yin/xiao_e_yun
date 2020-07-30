@@ -23,7 +23,7 @@ border-bottom:2px solid var(--main_color);
 }
 .air_block{/*空氣牆*/
     height:60px;
-    width:100vw
+    width:100vw;
 }
 .more{/*更多*/
 position:fixed
@@ -40,8 +40,47 @@ position:fixed
     top: 5px;
     right: 5px;
 }
-.main_content { /*主內容捲軸*/
+.main_content { /*主內容+捲軸*/
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+@media screen and (max-width:600px) { /*手機螢幕縮放*/
+    .section {
+        width: 100vw;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:930px) and (min-width:601px) { /*小螢幕縮放*/
+    .air_block { /*空氣牆*/
+        position: fixed;
+        box-sizing: border-box;
+        height: 60px;
+        width: 50vw
+    }
+    .header {
+        position: fixed;
+        box-sizing: border-box;
+        width: 46vw;
+        right: 0px;
+        top: 0px;
+        left: auto;
+        margin: 2vw;
+        border: 2px solid var(--main_color);
+        border-radius: 10px
+    }
+    .section {
+        width: 50vw;
+        height: 100vh;
+        position: absolute;
+        top: 60px;
+        right: 5px;
+        box-sizing: border-box
+    }
 }

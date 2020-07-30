@@ -122,6 +122,9 @@ padding:2px;
     padding: 2px;
     font-size: var(--font_size);
 }
+#right_air {
+display:none
+}
 @media screen and (max-width:600px) { /*手機螢幕縮放*/
     .air_block {
         height: 55px
@@ -170,8 +173,10 @@ padding:2px;
         border-radius: 10px
     }
 
-    .air_block {
-        height: 0vh
+    #right_air {
+        height:70px;
+        position:relative;
+        display:block;
     }
 
     .main_section {
@@ -198,9 +203,10 @@ padding:2px;
     .right_section {
         width: 50vw;
         height: 100vh;
-        position: absolute;
-        top: 60px;
+        position: fixed;
         right: 5px;
-        box-sizing: border-box
+        box-sizing: border-box;
+        overflow-y:auto;
+        overflow-x:hidden
     }
 }
