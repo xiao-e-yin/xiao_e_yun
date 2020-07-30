@@ -56,23 +56,19 @@ position:fixed
 #right_air {
     display: none
 }
-@media screen and (max-width:600px) { /*手機螢幕縮放*/
+@media screen and (max-width:600px) and (min-width:451px) { /*手機螢幕縮放*/
     .section {
-        width: 100vw;
+        width: 50vw;
         height: auto;
         box-sizing: border-box;
     }
-    #right_air {
-        height: 70px;
-        position: relative;
-        display: block;
-    }
+
     .title {
         border-radius: 5px;
         background-image: none;
         background-color: var(--background_color);
         border: 2px solid var(--main_color);
-        padding:2px;
+        padding: 2px;
     }
 }
 @media screen and (max-width:930px) and (min-width:601px) { /*小螢幕縮放*/
@@ -86,11 +82,11 @@ position:fixed
     .header {
         position: fixed;
         box-sizing: border-box;
-        width: 46vw;
+        width: 48vw;
         right: 0px;
         top: 0px;
         left: auto;
-        margin: 2vw;
+        margin: 1vw;
         border: 2px solid var(--main_color);
         border-radius: 10px
     }
@@ -98,11 +94,42 @@ position:fixed
         width: 48vw;
         position: relative;
         top: 1vh;
+        margin:0;
         box-sizing: border-box;
     }
     #right_air {
-        height: 70px;
+        height: 65px;
         position: relative;
         display: block;
+    }
+}
+@media screen and (max-width:450px) { /*窄螢幕縮放*/
+    .title {
+        border-radius: 5px;
+        background-image: none;
+        background-color: var(--background_color);
+        border: 2px solid var(--main_color);
+        padding: 2px;
+    }
+    .air_block { /*空氣牆*/
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        height: 60px;
+        width: 50vw
+    }
+
+    .section {
+        width: 100vw;
+        position: relative;
+        top: 1vh;
+        margin: 1vw;
+        box-sizing: border-box;
+    }
+
+    #right_air {
+        height: 65px;
+        position: relative;
+        display: none;
     }
 }

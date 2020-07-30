@@ -1,6 +1,6 @@
 window.onload =hello();//啟動加載
 function hello() {
-    console.log("中文")
+    console.log("啟動加載JS")
     setTimeout(hello_time);
 }
 function time() {
