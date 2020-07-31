@@ -31,10 +31,16 @@
             <!--分頁-->
             <h1 class="title">設置</h1>
             <div class="setting_item">
-                <p class="setting_title">舔耳朵</p>
+                <h1 class="setting_title">你的名稱</h1>
+                <h2 class="setting_introduction">
+                    此可以讓悪運怎麼叫你<br>
+                    你也可以取奇葩的名字<br>
+                </h2>
+                <input id="setting_user_name" class="setting_input" type="text" onchange="setting_user_name()"><br>
+                <p class="setting_success" id="setting_user_success">已更改</p>
             </div>
             <div class="setting_item">
-                <p class="setting_title">抱抱</p>
+                <h1 class="setting_title">抱抱</h1>
             </div>
         </div>
         <div class="section">
@@ -42,14 +48,15 @@
             <p class="air_block" id="right_air"> </p>
             <h1 class="title">設置</h1>
             <div class="setting_item">
-                <p class="setting_title">摸摸頭</p>
+                <h1 class="setting_title">摸摸頭</h1>
             </div>
             <div class="setting_item">
-                <p class="setting_title">小笨蛋</p>
+                <h1 class="setting_title">小笨蛋</h1>
             </div>
         </div>
     </div>
-    <script charset="utf-8" src="javascript/web_link.js"></script><!--網站js集-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script charset="utf-8" src="javascript/cookie.js"></script><!--網站cookie js集-->
     <script charset="utf-8" src="javascript/setting.js"></script><!--網站設置js集-->
 </body>
 </html>

@@ -7,11 +7,12 @@ function new_user() {//新使用者cookie
     if ("" == document.cookie) {
         console.log("設置新的使用者")
         setCookie("UserName", "陌生人")
-        setTimeout(hello_time,500)
+        setTimeout(HelloTime,500)
     }
     else
-    console.log("取得使用者資料")
-    HelloTime()
+        console.log("讀取使用者資料")
+    checkCookie();
+    HelloTime();
 }
 function HelloTime() {//報時機制
     var user_name = getCookie("UserName");
@@ -20,7 +21,7 @@ function HelloTime() {//報時機制
     console.log("報時")
     if (time > 12) {//判定早中晚
         var pm_time = time - 12
-        if (pm_time >= 10) {
+        if (pm_time >= 11) {
             var hours_time = "晚上" + pm_time + "點了拉"
         }
         else {

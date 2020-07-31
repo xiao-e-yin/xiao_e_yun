@@ -4,5 +4,7 @@
     --font_size: 20px; /*字體大小*/
     --secondary_color: rgba(255, 255, 255, 0.75); /*副色*/
     --background_color: rgba(255,255,255,0.4); /*被景色*/
+    --black_background_color: rgba(0,0,0,0.3); /*黑背景色*/
     --no_color: rgba(0,0,0,0.0); /*無色*/
+    --font_family: "內海字體","微軟正黑體","Arial";
 }

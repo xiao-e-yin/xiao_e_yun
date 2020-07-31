@@ -21,3 +21,11 @@
         background-position: right
     }
 }
+@keyframes fade_out { /*淡出*/
+    from {opacity:1;}
+    to {opacity:0;}
+}
+@keyframes fade_in { /*淡入*/
+    from {opacity:0;}
+    to {opacity:1;}
+}

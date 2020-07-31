@@ -17,16 +17,72 @@
 }
 .setting_title {
     position: relative;
+    margin: 15px 0 0 0;
     top: 5px;
-    font-size:50px;
-    padding:0 10px 0 0
+    font-size: 50px;
+    padding: 0 10px 0 0
 }
-@media screen and (max-width:450px) { /*¤â¾÷¯¶¿Ã¹õÁY©ñ*/
-    .setting_item {
-        width:40vw;
-        background-image: none;
-        background-color: var(--background_color);
-        border: 2px solid var(--main_color);
-        border-radius:10px
+.setting_introduction {
+    position:relative;
+    margin:10px 5px;
+}
+.setting_input {
+    position: relative;
+    margin: 0 5px;
+    background-color: var(--no_color);
+    color: var(--main_color);
+    border-radius: 5px;
+    width: 240px;
+    height: 50px;
+    font-size: 50px;
+    font-family: var(--font_family);
+    border: 2px var(--main_color) solid;
+}
+.setting_success {
+    opacity: 0;
+    display: inline;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    color: var(--main_color);
+    font-size: 20px;
+    font-family: var(--font_family);
+    border-width: 3px 0 3px;
+    user-select: none;
+    border: var(--main_color) solid;
+    transition:opacity ease-out 0.4s;
+}
+.success_opacity {
+    opacity: 1
+}
+@media screen and (max-width:570px) { /*çª„èž¢å¹•ç¸®æ”¾*/
+    .title {
+            border-radius: 5px;
+            background-image: none;
+            background-color: var(--background_color);
+            border: 2px solid var(--main_color);
+            padding: 2px;
+        }
+
+        .air_block { /*ç©ºæ°£ç‰†*/
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            height: 60px;
+            width: 50vw
+        }
+
+        .section {
+            width: 100vw;
+            position: relative;
+            top: 1vh;
+            margin: 1vw;
+            box-sizing: border-box;
+        }
+
+        #right_air {
+            height: 65px;
+            position: relative;
+            display: none;
+        }
     }
-}

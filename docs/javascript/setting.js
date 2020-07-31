@@ -1,20 +1,13 @@
-function setCookie(cname, cvalue) {//設置cookie
-  var d = new Date();
-    d.setTime(d.getTime() + 31557600000);
-  var expires = "expires="+ d.toUTCString();
-    document.cookie =cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
+function setting_user_name() {//更改你的名稱
+    var user_name = $("#setting_user_name").val()
+    console.log("已更改名稱為 " + user_name)
+    setCookie("UserName", user_name)
+    setting_success("setting_user_success")
+};
+function setting_success(success) {
+    var name = "#" + success
+    $(name).toggleClass("success_opacity")
+    setTimeout(function () {
+        $(name).toggleClass("success_opacity")
+    }, 1000,name)
 }
