@@ -54,6 +54,7 @@
 }
 .setting_input {
     transition: all ease-in-out 400ms;
+    float: left;
 }
 .setting_normal {
     background-position: right;
@@ -67,8 +68,10 @@
 .setting_success {
     opacity: 0;
     display: inline;
-    position: relative;
-    top: 5px;
+    position: absolute;
+    bottom: 1px;
+    left:0;
+    margin-left:5px;
     border-radius: 5px;
     color: var(--main_color);
     font-size: 20px;
@@ -76,10 +79,16 @@
     border-width: 3px 0 3px;
     user-select: none;
     border: var(--main_color) solid;
-    transition:opacity ease-out 0.4s;
+    transition: opacity ease-out 0.4s;
 }
 .success_opacity {
     opacity: 1
+}
+.new_tab {
+    float: left;
+    position: relative;
+    font-size: 22px;
+    user-select: none;
 }
 @media screen and (max-width:570px) { /*窄螢幕縮放*/
     .title {

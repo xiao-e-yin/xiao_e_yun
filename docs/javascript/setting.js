@@ -17,6 +17,7 @@ function setting_success(success) {//已更改通知
 $("#setting_mode").click(function setting_mode() {
     var mode = getCookie("Mode")
     console.log("切換模式")
+    setting_success("setting_mode_success")
     if (mode == "normal") {
         setCookie("Mode", "home")
         $("#setting_mode").val("首頁模式")

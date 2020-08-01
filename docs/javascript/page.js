@@ -72,8 +72,8 @@ function HelloTime() {//報時機制
     }
 }
 function Mode() {
-    var Mode = getCookie(Mode);
-    if (Mode = "home") {
+    var Mode = getCookie("Mode");
+    if (Mode == "home") {
         console.log("首頁模式")
         $(".left_section").html("<p class=air> </p>");
         $(".left_section").css({ "width": "25vw" });
