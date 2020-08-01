@@ -26,7 +26,7 @@
     position:relative;
     margin:10px 5px;
 }
-.setting_input {
+.setting_text_input {
     position: relative;
     margin: 0 5px;
     background-color: var(--no_color);
@@ -37,6 +37,32 @@
     font-size: 50px;
     font-family: var(--font_family);
     border: 2px var(--main_color) solid;
+}
+.setting_change_input {
+    position: relative;
+    margin: 0 5px;
+    background-color: var(--no_color);
+    background-image: linear-gradient(to right,var(--main_color),var(--main_color),var(--main_color),var(--no_color),var(--no_color),var(--no_color));
+    background-size: 250%;
+    border-radius: 5px;
+    font-size: 45px;
+    font-family: var(--font_family);
+    border: 2px var(--main_color) solid;
+}
+.setting_input:hover {
+    border-color: rgb(0, 0, 0);
+}
+.setting_input {
+    transition: all ease-in-out 400ms;
+}
+.setting_normal {
+    background-position: right;
+    color: var(--main_color);
+}
+.setting_home {
+    background-position: left;
+    color: rgb(255,255,255);
+    background-color: var(--no_color);
 }
 .setting_success {
     opacity: 0;

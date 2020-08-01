@@ -1,6 +1,10 @@
 ﻿.more{/*更多*/
 position:fixed
 }
+.air{
+    height:1px;
+    width:1px;
+}
 .right_section { /*右邊內容*/
     float: left;
     width: 30vw;
@@ -240,4 +244,20 @@ padding:2px;
         overflow-y:auto;
         overflow-x:hidden
     }
+}
+.home_setting {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    opacity:0
+}
+.home_setting_touch {
+    position: fixed;
+    top:0px;
+    right:0px;
+    width:130px;
+    height:100px;
+}
+.home_setting_touch:hover .home_setting {
+    opacity: 1
 }
