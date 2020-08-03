@@ -14,6 +14,7 @@ function new_user() {//新使用者cookie
         console.log("讀取使用者資料")
     checkCookie();
     HelloTime();
+    setInterval(HelloTime,10000)
     Mode()
 }
 function HelloTime() {//報時機制
