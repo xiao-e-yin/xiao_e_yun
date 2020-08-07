@@ -1,10 +1,11 @@
 window.onload = hello();//啟動加載
 window.onload = function () {
     var background = new Image()
-    background.src = "../images/background.png"
+    background.src = "https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png"
     setTimeout(
         function () {
-            $(".background").css({ "background-image": "../images/background.png","opacity":"1"})
+            $(".background").css({
+                "background-image": "url('https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png')","opacity":"1"})
         }
         , 1500)
 }
