@@ -1,6 +1,5 @@
 window.onload = function () {
     mode()
-   $("html").css("background-image", "url(../images/background.png)")
 }
 function setting_user_name() {//更改你的名稱
     var user_name = $("#setting_user_name").val()
