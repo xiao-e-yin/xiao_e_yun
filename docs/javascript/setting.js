@@ -1,5 +1,7 @@
 window.onload = function () {
     mode()
+    var background = new Image()
+    background.src = "https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png"
    $("html").css("background-image", "url('https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png'）”')")
 }
 function setting_user_name() {//更改你的名稱
