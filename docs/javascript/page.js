@@ -1,10 +1,10 @@
 window.onload = hello();//啟動加載
 window.onload = function () {
-    background = new Image()
+    var background = new Image()
     background.src = "../images/background.png"
     setTimeout(
         function () {
-            $(".background").css({ "background-image": "url(../images/background.png)","opacity":"1"})
+            $(".background").css({ "background-image": "../images/background.png","opacity":"1"})
         }
         , 1500)
 }
