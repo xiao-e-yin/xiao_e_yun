@@ -74,3 +74,6 @@ h1 { /*大標題*/
     padding: 2px;
     font-weight: normal;
 }
+h2 { /*2標題*/
+    font-weight: lighter;
+}
