@@ -3,8 +3,19 @@
     src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.63/webfont/NaikaiFont-Regular-Lite.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.63/webfont/NaikaiFont-Regular-Lite.woff) format("woff");
 }
 html {
-    background-image: url("../images/background.png");
+    background-image: url("../images/background_blur.png");
     background-position: left top;
+    background-size:1920px 1080px;
+}
+.background {
+    position:fixed;
+    width:1920px;
+    height:1080px;
+    top:0;
+    left:0;
+    margin:0;
+    opacity:0;
+    transition:opacity ease-out 0.5s
 }
 body {
     padding: 5px;

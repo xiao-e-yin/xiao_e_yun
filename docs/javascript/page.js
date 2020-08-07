@@ -1,4 +1,13 @@
-window.onload =hello();//啟動加載
+window.onload = hello();//啟動加載
+window.onload = function () {
+    background = new Image()
+    background.src = "../images/background.png"
+    setTimeout(
+        function () {
+            $(".background").css({ "background-image": "url(../images/background.png)","opacity":"1"})
+        }
+        , 1500)
+}
 function hello() {
     console.log("悪運の家|紀錄器|")
     new_user()
