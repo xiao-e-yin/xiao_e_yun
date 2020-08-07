@@ -72,4 +72,5 @@ button { /*按鈕正常*/
 h1 { /*大標題*/
     color: var(--main_color);
     padding: 2px;
+    font-weight: normal;
 }
