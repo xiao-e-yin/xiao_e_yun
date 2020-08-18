@@ -90,6 +90,7 @@ function Mode() {
         $(".left_section").css({ "width": "25vw" });
         $(".right_section").html("<p class=air> </p>");
         $(".right_section").css({ "width": "25vw" });
+        $(".about").css({ "display": "none" });
         $(".more").html('<p class="home_setting_touch"><a class="home_setting" type="text/html" href="setting.html">設置</a></p>')
         $(".header").remove()
     }

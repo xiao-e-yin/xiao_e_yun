@@ -47,16 +47,19 @@ position:fixed
     float: left;
     width: 50vw;
     transition: color 250ms,background-color 400ms,opacity 800ms ease-out;
-    text-decoration: none;
-    padding: 1px 2px;
     color: #d400d4;
-    border: 2px solid rgba(212,0,212,1);
-    background-color: rgba(255,255,255,0.4);
-    border-radius: 5px;
     font-size: inherit;
     font-family: inherit;
     text-align: center;
     height: auto
+}
+.mid_content { /*中間內容*/
+    text-decoration: none;
+    padding: 5px 2px;
+    border: 2px solid rgba(212,0,212,1);
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    position: relative
 }
 .main_content:after { /*三段式內容*/
     content: "";
