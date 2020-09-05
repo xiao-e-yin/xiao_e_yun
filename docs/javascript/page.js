@@ -9,7 +9,7 @@ window.onload = function () {
                 "opacity": "1"
             })
         })
-    }, 50)
+    }, 1000)
 }
 function hello() {
     console.log("悪運の家|紀錄器|")
