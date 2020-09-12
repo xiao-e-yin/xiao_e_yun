@@ -17,7 +17,7 @@ function mode() {
                 "opacity": "1"
             });
         });
-    }
+    }}
 function new_user() {//新使用者cookie
     if ("" == document.cookie) {
         console.log("設置新的使用者")
