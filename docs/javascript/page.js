@@ -11,6 +11,11 @@ function mode() {
     $(".background").css({
         "background-image": background_image
     });
+    setTimeout(function () {
+        $(".background").css({
+            'transition':'opacity ease - out 0.5s',
+        });
+    }, 500)
     image.onload = function () {
         window.addEventListener("load", function () {
             $(".background").css({
