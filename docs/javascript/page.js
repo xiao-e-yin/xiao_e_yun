@@ -15,7 +15,7 @@ function mode() {
         $(".background").css({
             "transition":"opacity ease-out 0.5s",
         });
-    }, 500)
+    }, 300)
     image.onload = function () {
         window.addEventListener("load", function () {
             $(".background").css({
