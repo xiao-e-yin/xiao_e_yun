@@ -12,8 +12,9 @@ function mode() {
         "background-image": background_image
     });
     setTimeout(function () {
+        console.log("沒有快取");
         $(".background").css({
-            'transition':'opacity ease - out 0.5s',
+            "transition":"opacity ease-out 0.5s",
         });
     }, 500)
     image.onload = function () {
