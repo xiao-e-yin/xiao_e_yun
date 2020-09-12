@@ -7,7 +7,7 @@ function hello() {
 function mode() {
     var image = new Image()
     image.src = 'https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png'
-    background_image = 'url(' + image + ')'
+    var background_image = 'url(' + image.src + ')'
     $(".background").css({
         "background-image": background_image
     });
@@ -17,7 +17,8 @@ function mode() {
                 "opacity": "1"
             });
         });
-    }}
+    }
+}
 function new_user() {//新使用者cookie
     if ("" == document.cookie) {
         console.log("設置新的使用者")
