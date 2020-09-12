@@ -5,16 +5,18 @@ function hello() {
     mode()
 }
 function mode() {
+    var image = new Image()
+    image.src = 'https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png'
     $(".background").css({
-        "background-image": "url('https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png')"
-    })
-    setTimeout(function () {
+        "background-image": '"url("+image+")"'
+    });
+    image.onload = function () {
         window.addEventListener("load",function() {
             $(".background").css({
                 "opacity": "1"
-            })
-        })
-}, 500);
+            });
+        });
+}}
 function new_user() {//新使用者cookie
     if ("" == document.cookie) {
         console.log("設置新的使用者")
