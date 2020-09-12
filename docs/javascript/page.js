@@ -1,5 +1,10 @@
 window.onload = hello();//啟動加載
-window.onload = function () {
+function hello() {
+    console.log("悪運の家|紀錄器|")
+    new_user()
+    mode()
+}
+function mode() {
     $(".background").css({
         "background-image": "url('https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png')"
     })
@@ -10,10 +15,6 @@ window.onload = function () {
             })
         })
 }, 500);
-function hello() {
-    console.log("悪運の家|紀錄器|")
-    new_user()
-}
 function new_user() {//新使用者cookie
     if ("" == document.cookie) {
         console.log("設置新的使用者")
