@@ -4,11 +4,11 @@ window.onload = function () {
         "background-image": "url('https://raw.githubusercontent.com/xiao-e-yun/home/master/docs/images/background.png')"
     })
     setTimeout(function () {
-        $(".background").onload(function () {
+        $(".background").onload=function () {
             $(".background").css({
                 "opacity": "1"
             })
-        })
+        }
     }, 500)
 }
 function hello() {
