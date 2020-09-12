@@ -8,8 +8,8 @@ window.onload = function () {
             $(".background").css({
                 "opacity": "1"
             })
-        }, 500)
-});
+        })
+}, 500);
 function hello() {
     console.log("悪運の家|紀錄器|")
     new_user()
